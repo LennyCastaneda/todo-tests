@@ -18,7 +18,8 @@
     };
     return service;
 
-    ////////////////
+
+    //////////////// add(todo) ////////////////
 
     function add(todo) {
       var defer = $q.defer();
@@ -36,6 +37,9 @@
       return defer.promise;
     }
 
+
+   //////////////// getAll() ////////////////
+
     function getAll() {
       var defer = $q.defer();
 
@@ -51,6 +55,9 @@
 
       return defer.promise;
     }
+ 
+
+   //////////////// getById(id) ////////////////
 
     function getById(id) {
       var defer = $q.defer();
@@ -68,6 +75,9 @@
       return defer.promise;
     }
 
+
+   //////////////// update(todo) ////////////////
+
     function update(todo) {
       var defer = $q.defer();
 
@@ -83,6 +93,9 @@
 
       return defer.promise;
     }
+
+
+   //////////////// remove(todo) ////////////////
 
     function remove(todo) {
       var defer = $q.defer();

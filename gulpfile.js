@@ -28,24 +28,24 @@ gulp.task('injectables', function() {
 
 gulp.task('js', function() {
     gulp.src(jsSources)
-        .pipe(connect.reload())
+        .pipe(connect.reload());
 });
 
 gulp.task('html', function() {
     gulp.src(htmlSources)
-        .pipe(connect.reload())
+        .pipe(connect.reload());
 });
 
 gulp.task('css', function() {
     gulp.src(cssSources)
-        .pipe(connect.reload())
+        .pipe(connect.reload());
 });
 
 gulp.task('connect', function() {
     connect.server({
         root: './src',
         livereload: true
-    })
+    });
 });
 
 gulp.task('app', function(){
